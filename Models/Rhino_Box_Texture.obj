@@ -4,6 +4,7 @@ mtllib Rhino_Box_Texture.mtl
 g Default
 usemtl Basic Material 001 (1)
 v -5 0 5
+v -5 10 5
 v 5 0 5
 v 5 10 5
 v 5 0 5
