@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Step 12</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+			<a-sky src="https://cdn.glitch.com/dca68048-aaaf-4fcd-9ab8-7614dd5136ac%2Fstorm_king.jpg?1534209715789" rotation="0 0 0"></a-sky>
+  
+      <a-sphere position="-5 2 -5" radius="1" color="red">
+        <a-animation begin="mouseenter" end="mouseleave" fill="forwards" repeat="0"
+         direction="normal" attribute="scale" from="1 1 1"
+         to="1.5 1.5 1.5" dur="1250"></a-animation>
+         <a-animation id="animShrink" begin="mouseleave" end="mouseenter" repeat="0" fill="forwards"
+          direction="normal" attribute="scale"
+          to="1 1 1" dur="500"></a-animation>
+      </a-sphere> 
+
+      <a-camera position="0 0 0">
+        <a-cursor color="white"></a-cursor>
+      </a-camera>
+      
+    </a-scene>
+  </body>
+</html>

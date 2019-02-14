@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Step 11</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+			<a-sky src="https://cdn.glitch.com/dca68048-aaaf-4fcd-9ab8-7614dd5136ac%2Fstorm_king.jpg?1534209715789" rotation="0 0 0"></a-sky>
+      
+			<a-box position="0 0 0">
+        <a-animation attribute="rotation" to="0 360 0" dur="10000" direction="normal" repeat="indefinite" easing="linear" visible="false"></a-animation>
+        <a-sphere position="0 0 -5" color="white" rotation="0 45 0" src="https://cdn.glitch.com/c3be95eb-62bf-43e5-a0a1-6d9c80b55ccd%2Fmars.jpg?1538472757071">
+          <a-animation attribute="rotation" to="0 360 0" dur="1000" direction="reverse" repeat="indefinite" easing="linear"></a-animation>
+            <a-sphere position="0 0 -2" scale="0.25 0.25 0.25" color="white" rotation="0 0 0" src="https://cdn.glitch.com/c3be95eb-62bf-43e5-a0a1-6d9c80b55ccd%2Fmars.jpg?1538472757071">
+              <a-animation attribute="rotation" to="0 360 0" dur="2000" direction="normal" repeat="indefinite" easing="linear"></a-animation>
+            </a-sphere>
+        </a-sphere>
+      </a-box>  
+      
+      <a-box position="0 3 0">
+        <a-animation attribute="rotation" to="0 360 0" dur="8000" direction="reverse" repeat="indefinite" easing="linear" visible="false"></a-animation>
+
+      </a-box>  
+        
+      <a-camera position="0 0 0"></a-camera>
+      
+    </a-scene>
+  </body>
+</html>
