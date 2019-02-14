@@ -1,0 +1,21 @@
+Pratt VR Workshop - Resources
+
+Step 1 - Basic Set Up
+
+<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+
+Step 4 - Textures
+
+https://i.imgur.com/mYmmbrp.jpg
+
+Step 7 - Basic Interaction
+
+<script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
+
+<a-box color="red" scale="1 1 1" position="5 0 0"
+		event-set__enter="_event: mouseenter; color: green"
+		event-set__leave="_event: mouseleave; color: red"
+
+>
+</a-box>
+
