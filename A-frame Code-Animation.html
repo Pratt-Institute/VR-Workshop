@@ -1,0 +1,24 @@
+﻿//We’ll start by creating the basic setup of our code, this is the latest A-Frame build that we will be using in our project. We will be creating a virtual reality environment, using OBJ and PNG files for your sculptures to appear in the scene with texture.
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+</head>
+  <body>
+        <a-scene background="color: #ECECEC">
+          
+          <a-assets>
+            <a-asset-item id="mystuff" src="https://cdn.glitch.com/c2c2556f-f03f-4794-9c23-b8ffac67f5ab%2Fmaralina_smaller.obj?v=1569601384565"></a-asset-item>
+            <a-asset img id="my-texture" src="https://cdn.glitch.com/c2c2556f-f03f-4794-9c23-b8ffac67f5ab%2FMaralina_0.png?v=1569601381898"></a-asset>
+          </a-assets>
+
+
+          <a-sky src="https://cdn.glitch.com/f95b006d-37e2-4dbc-bf93-334bbe89b086%2FPrattCampus360_10_small.jpg?1553106900708"></a-sky>
+
+
+<a-entity obj-model="obj:#mystuff" material="src: #my-texture" position="0 0 -10" scale=".051 .051 .051" rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
+          
+          
+        </a-scene>
+  </body>
+</html>
