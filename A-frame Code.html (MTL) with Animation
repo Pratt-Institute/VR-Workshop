@@ -11,7 +11,7 @@
       
       <a-assets>
             <a-asset-item id="obj" src=""></a-asset-item>
-            <a-asset-item id="mtl" src="</a-asset-item>
+            <a-asset-item id="mtl" src=""></a-asset-item>
 </a-assets>
 
       <a-entity obj-model="obj: #obj; mtl:#mtl" position="0 0 0"></a-entity>
