@@ -2,33 +2,35 @@
 <html>
 
 <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
   
-<body style="margin : 0px; overflow: hidden;">
+<!--This tells your code that it wants to use AR.js to create an Augmented Reality Scene!-->
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+  <body style="margin : 0px; overflow: hidden;">
+  
+  <!--This is the beginning of you Augmented Reality scene!-->
   <a-scene embedded arjs>
 
-    <!-- <a-box position="0 0.5 0" color="#4CC3D9"></a-box> !--> 
-    
-    <a-marker-camera preset= "hiro"></a-marker-camera>
+  <!--This is a box that will be triggered to appear, by your marker image!-->
+  <!--<a-box position="0 0.5 0" color="#4CC3D9"></a-box>!-->
 
-  <a-assets>
-    <a-asset-item id="obj" src="https://cdn.glitch.com/0671aa85-d115-4cf0-aa78-9b1305c15710%2Fmodel.obj?v=1571160407881"></a-asset-item>
+  <!--This is your 3D asset, split into two files. The OBJ file is your actualy 3D model, and the MTL file is the textue, shadow, color, etc 
+  applied to the model. The marker image triggers your 3D assets into AR!-->
+  <!--<a-assets>
+    <a-asset-item img id="obj" src="https://cdn.glitch.com/0671aa85-d115-4cf0-aa78-9b1305c15710%2Fmodel.obj?v=1571160407881"></a-asset-item>
     <a-asset-item id="mtl" src="https://cdn.glitch.com/0671aa85-d115-4cf0-aa78-9b1305c15710%2Fmaterials.mtl?v=1571160523644"></a-asset-item>
-  </a-assets>
+  </a-assets>!-->
 
-  <!-- <a-entity obj-model="obj: #obj; mtl: #mtl"></a-entity> !-->
+  <a-entity obj-model="obj: #obj; mtl: #mtl"></a-entity>
+    
+    <!--This is your marker. It's the image that will trigger your AR scene!-->
+    <a-marker-camera preset= "hiro"></a-marker-camera>
         
+    <!--This is the text that appears when your AR scene is triggered by the marker!-->
+    <a-text value="Hello World!" position="-1 1 0" rotation="-90 0 0" scale="2 5 5" text="color: #ff312b"></a-text>
     
-    <!-- THIS WILL SHOW TEXT ON TOP OF YOUR PAGE !-->
-    <a-text value="Hello World!" rotation="-90 0 0" scale="1 5 1" text="color:#ff312b"></a-text>
-
-    
-    
-    <!-- <a-image src="https://cdn.glitch.com/e3bbd3c9-a4cf-4bce-9c35-4162d9f6c718%2FCoronavirus-comparison.png?v=1581016553313" rotation="90 90 270"></a-image>
-    
-     <a-image src="https://cdn.glitch.com/e3bbd3c9-a4cf-4bce-9c35-4162d9f6c718%2FCoronavirus-comparison.png?v=1581016553313" rotation="0 0 360"></a-image> !-->
-
-
+  <!--This is the image that appears when your AR scene is triggered by the marker!-->
+  <a-image src="https://cdn.glitch.com/edd44d49-d993-4831-8574-1dbd0d18c762%2FCoronavirus-comparison.png?v=1581020423671" rotation="-90 0 360" position="0 .25 0" scale="1 1 1"></a-image>
     
   </a-scene> 
 </body>
