@@ -1,0 +1,59 @@
+<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+<!-- Modified  version of aframe-ar to fire events when markers are found -->
+<script src="https://cdn.glitch.com/258e87dd-2cf6-4e89-bccc-be709c25ff79%2Faframe-ar.js?1525282400523"></script>
+<script src="https://cdn.glitch.com/76a3f242-f1b9-4671-b1ad-1bbe3399179c%2Faframe-play-on-scan.js?1528207376210"></script>
+
+<link rel="stylesheet" type="text/css" href="/style.css">
+
+<style>
+  .overlay {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, 0.85); 
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
+
+<body style="margin : 0px; overflow: hidden;">
+  
+ <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+       <!-- Load video -->
+    <a-assets>
+      <video  id="what-car" loop  ="true" src="https://cdn.glitch.com/76a3f242-f1b9-4671-b1ad-1bbe3399179c%2Fiwaswrong.mp4?1528208658310"></video>
+    </a-assets>
+
+    <a-marker preset="pattern" type="pattern" url="https://cdn.glitch.com/76a3f242-f1b9-4671-b1ad-1bbe3399179c%2Fpattern-marker-tiphaine.patt?1528206729768">
+      <a-entity scale="1 1 1" rotation="-90 0 0">
+<!--         <a-image src="https://cdn.glitch.com/a977f4c7-2bcf-456b-a9bf-90a1d369c0fc%2Fmosse-triumph-of-the-will.jpg?1523567111109" /> -->
+        <a-video play-on-scan src="#what-car"></a-video>
+      </a-entity>
+    </a-marker>
+
+    <a-entity camera> 
+      <a-entity 
+          position="0 0 0">
+      </a-entity>
+    </a-entity>
+
+  </a-scene>
+
+  <div class="overlay">
+     <button>
+      START   
+     </button>
+  </div> 
+    
+  <script>
+    const overlay = document.querySelector(".overlay");
+    const startBtn = overlay.querySelector("button");
+    console.log(startBtn);
+    startBtn.addEventListener("click", function(){
+      overlay.style.display = "none";    
+    });
+  </script>
+  
+</body>
