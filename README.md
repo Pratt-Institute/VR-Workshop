@@ -21,7 +21,7 @@ TUTORIALS
 <h2>OTHER AR PLATFORMS TO CONSIDER</H2>
 <ul>
   <li>Adobe Aero: https://www.adobe.com/products/aero.html</li>
-    <li>Endscape: https://enscape3d.com/</li>
+    <li>Enscape: https://enscape3d.com/</li>
   <li>CoSpace Classroom AR: https://cospaces.io/edu/</li>
   <li>Artsteps VR Museum Exhibitions: https://www.artsteps.com/</li>
   <li>Styly AR/ VR for Artists: https://styly.cc/</li>
