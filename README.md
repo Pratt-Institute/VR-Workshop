@@ -39,5 +39,5 @@ LATEST DOCUMENTATION
 <ul>
   <li>How AI will Eat UI: The inevitable day when machines learn to design our apps: https://artyomavanesov.com/blog/how-ai-will-eat-ui</li>
   <li>General VR Links: https://pinboard.in/u:basemaly/t:vr </li>
-  <li>VR & The Battle for Truth Bookmarks: https://pinboard.in/u:basemaly/t:vrandtruth21 </li>
+  <li>VR & The Battle for Truth Links: https://pinboard.in/u:basemaly/t:vrandtruth21 </li>
 </ul>
