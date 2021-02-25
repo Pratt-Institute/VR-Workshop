@@ -12,6 +12,11 @@ LATEST VERSION:
 LATEST DOCUMENTATION
 <a href="https://ar-js-org.github.io/AR.js-Docs/">AR.js - Augmented Reality on the Web</a>
 
+TUTORIALS
+<ul>
+<li><a href="https://medium.com/@aschmelyun/so-you-want-to-get-started-with-ar-js-41dd4fba5f81">So you want to get started with AR.js</a></li>
+<li><a href="https://www.youtube.com/watch?v=NIXJJoqM8BQ">Tutorial: augmented reality web app using AR.js & A-Frame</a></li>
+</ul>
 
 <h2>OTHER AR PLATFORMS TO CONSIDER</H2>
 <ul>
