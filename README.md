@@ -31,3 +31,9 @@ LATEST DOCUMENTATION
 - AR Plan 3D mobile app
 - 3DBrush mobile app
 - Augment mobile app
+
+<h2>ADDITIONAL RESOURCES</H2>
+<ul>
+  <li>General VR Links: https://pinboard.in/u:basemaly/t:vr </li>
+  <li>VR & The Battle for Truth Bookmarks: https://pinboard.in/u:basemaly/t:vrandtruth21 </li>
+</ul>
