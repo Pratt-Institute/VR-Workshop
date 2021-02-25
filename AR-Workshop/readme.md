@@ -2,7 +2,7 @@
 AR.js is a lightweight library for Augmented Reality on the Web, coming with features like Image Tracking, Location-based AR and Marker tracking.
 
 LATEST VERSION:
-<a href="https://github.com/AR-js-org/AR.js">AR.js - Augmented Reality on the Web</a>
+<a href="https://github.com/AR-js-org/AR.js">AR.js - Github Repo</a>
 
 LATEST DOCUMENTATION
 <a href="https://ar-js-org.github.io/AR.js-Docs/">AR.js - Augmented Reality on the Web</a>
