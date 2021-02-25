@@ -34,6 +34,7 @@ TUTORIALS
 <h3>Mobile AR Apps</h3>
 
 - ARvid Augmented Reality mobile app
+- Spark AR
 - Torch AR mobile app
 - JigSpace mobile app
 - Magicplan mobile app
