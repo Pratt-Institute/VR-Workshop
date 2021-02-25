@@ -1,5 +1,7 @@
 <h1> EMERGING PRACTICES AR WORKSHOPS</H1>
-
+February 25, 2021
+Professor Jean Brennan
+Guest Speaker: Basem Aly: baly@pratt.edu
 
 <h2>AR.JS LATEST VERSION</H2>
 AR.js is a lightweight library for Augmented Reality on the Web, coming with features like Image Tracking, Location-based AR and Marker tracking.
